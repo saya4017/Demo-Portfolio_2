@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+	<title>My Portfolio</title>
+</head>
+<body>
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo">
+					<img src="./images/logo.png" alt="My Portfolioロゴ">
+				</div>
+				<ul class="gnav">
+					<li class="gnav-item">
+						<a class="gnav-link" href="#about">わたしについて</a>
+					</li>
+					<li class="gnav-item">
+						<a class="gnav-link" href="#skills">保有スキル</a>
+					</li>
+					<li class="gnav-item">
+						<a class="gnav-link" href="#works">制作実績</a>
+					</li>
+					<li class="gnav-item">
+						<a class="gnav-link" href="#contact">お問い合わせ</a>
+					</li>
+				</ul>
+			</div>
+			<h1 class="site-title">SAORI TSUTSUMI<br>PORTFOLIO</h1>
+		</div>
+		<div class="mainvisual-video-wrap">
+			<video class="mainvisual-video" src="./videos/mainvisual.mp4" muted autoplay loop></video>
+		</div>
+	</header>
+	<!-- わたしについて -->
+	<section class="about-area" id="about">
+		<div class="container">
+			<div class="about-wrap">
+				<div class="about-text-wrap">
+					<h2 class="section-title">
+						<span class="en">About</span>
+						<span class="ja">わたしについて</span>
+					</h2>
+					<div class="about-text-inner">
+						<p class="about-text">長野県出身。東京都内のシェアハウスに在住。<br>30歳を過ぎてから大学に入学し、そこでwebプログラミングの面白さを知る。<br>現在はwebデザイナーになるべく独学でプログラミングを学ぶ日々。</p>
+						<p class="about-text">昨年1年間をかけて「Canvaと無料素材でどこまでデザイン出来るのか？」に挑戦！見事365日毎日デザイン画を投稿することに成功。</canvas></p>
+						<p class="about-text">人と話をすることが好きで傾聴力とコミュニケーション能力、そして分かりやすく人に伝える力は自信があります。</p>
+						<p class="about-text">座右の銘は「 人生おもしろおかしく 」</p>
+					</div>
+				</div>
+				<!-- プロフィール -->
+				<div class="about-image-wrap">
+					<figure class="about-image">
+						<img src="./images/plofile.jpg" alt="堤沙織のプロフィール写真">
+					</figure>
+					<div class="about-image-info">
+						<div class="about-name">
+							<span class="synonym">堤 沙織</span>
+						</div>
+						<ul class="about-sns-list">
+							<li class="about-sns-item">
+								<a href="#">
+									<img src="./images/icon-twitter.svg" alt="">
+								</a>
+							</li>
+							<li class="about-sns-item">
+								<a href="#">
+									<img src="./images/icon-facebook.svg" alt="">
+								</a>
+							</li>
+							<li class="about-sns-item">
+								<a href="#">
+									<img src="./images/icon-youtube.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- skill -->
+	<section class="skills-area" id="skills">
+		<div class="container">
+			<h2 class="section-title">
+				<span class="en">Skills</span>
+				<span class="ja">保有スキル</span>
+			</h2>
+			<ul class="skill-list">
+				<li class="skill-item">
+					<div class="skill-detail">
+						<h3 class="skill-name">HTML</h3>
+						<meter class="skill-meter" min="0" max="100" value="50"></meter>
+						<p class="skill-summry">独学でプログラミング学習サイトや本で学習しています。</p>
+						<div class="skill-mastery">習得度<span class="skill-mastery-number">50%</span></div>
+					</div>
+					<figure class="skill-image">
+						<img src="./images/htm-logol.png" alt="">
+					</figure>
+				</li>
+				<li class="skill-item">
+					<div class="skill-detail">
+						<h3 class="skill-name">css</h3>
+						<meter class="skill-meter" min="0" max="100" value="50"></meter>
+						<p class="skill-summry">HTML同様に独学で学んでいます。レスポンシブ対応のweb制作は可能です。</p>
+						<div class="skill-mastery">習得度<span class="skill-mastery-number">50%</span></div>
+					</div>
+					<figure class="skill-image">
+						<img src="./images/css-logo.png" alt="">
+					</figure>
+				</li>
+				<li class="skill-item">
+					<div class="skill-detail">
+						<h3 class="skill-name">Javascript（jQuery）</h3>
+						<meter class="skill-meter" min="0" max="100" value="40"></meter>
+						<p class="skill-summry">条件分岐や繰り返し処理など基本的なものから、jQueryの操作方法まで学習。</p>
+						<div class="skill-mastery">習得度<span class="skill-mastery-number">40%</span></div>
+					</div>
+					<figure class="skill-image">
+						<img src="./images/javascript-logo.png" alt="">
+					</figure>
+				</li>
+				<li class="skill-item">
+					<div class="skill-detail">
+						<h3 class="skill-name">PHP</h3>
+						<meter class="skill-meter" min="0" max="100" value="40"></meter>
+						<p class="skill-summry">PHPと連携し送信されたデータをデータベースへCRUD処理することができます。</p>
+						<div class="skill-mastery">習得度<span class="skill-mastery-number">40%</span></div>
+					</div>
+					<figure class="skill-image">
+						<img src="./images/php-logo.png" alt="">
+					</figure>
+				</li>
+				<li class="skill-item">
+					<div class="skill-detail">
+						<h3 class="skill-name">Wordpress</h3>
+						<meter class="skill-meter" min="0" max="100" value="50"></meter>
+						<p class="skill-summry">既存テーマを使ったカスタマイズを利用して作成が可能です。</p>
+						<div class="skill-mastery">習得度<span class="skill-mastery-number">50%</span></div>
+					</div>
+					<figure class="skill-image">
+						<img src="./images/wordpress-logo.png" alt="">
+					</figure>
+				</li>
+				<li class="skill-item">
+					<div class="skill-detail">
+						<h3 class="skill-name">Git</h3>
+						<meter class="skill-meter" min="0" max="100" value="40"></meter>
+						<p class="skill-summry">pullやpush、commitなど基本的なものをコマンドで実行することができます。</p>
+						<div class="skill-mastery">習得度<span class="skill-mastery-number">40%</span></div>
+					</div>
+					<figure class="skill-image">
+						<img src="./images/git-logo.png" alt="">
+					</figure>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- 制作実績 -->
+	<section class="works-area" id="works">
+		<div class="container">
+			<h2 class="section-title">
+				<span class="en">Works</span>
+				<span class="ja">制作実績</span>
+			</h2>
+			<!-- works1 -->
+			<div class="works-wrap">
+				<div class="works-inner first">
+					<div class="works-image-wrap">
+						<figure class="works-image-frame">
+							<img src="./images/pc-frame.png" alt="">
+						</figure>
+						<div class="works-image-inner">
+							<img src="./images/work_1.jpg" alt="">
+						</div>
+						<!-- modal_1 -->
+						<div class="works-zoom">
+							<label for="work_1" class="work-check-label">拡大表示</label>
+							<input id="work_1" class="work-check" type="checkbox" value="拡大表示">
+							<div class="modal">
+								<div class="container">
+									<div class="modal-inner">
+										<div class="modal-body">
+											<img src="./images/modal-work1.png" alt="">
+										</div>
+										<div class="modal-close">
+											<label for="work_1"><img class="modal-close-image" src="./images/modal-close.svg" alt=""></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						<!-- 説明① -->
+					<div class="works-text-wrap">
+						<h3 class="works-title">Cafe walker</h3>
+						<p class="works-summary">都内の穴場にあるカフェのWebサイトとして制作しました。温かみのあるデザインとゆったりとできるお店の雰囲気を大事にしました。</p>
+						<div class="works-tag"><a href=" https://saya4017.github.io/Demo-Cafe-Walker/" target="_blank">Webサイト</a>
+						</div>
+					</div>
+				</div>
+				<!--wprk2-->
+				<div class="works-inner second">
+					<div class="works-image-wrap">
+						<figure class="works-image-frame">
+							<img src="./images/pc-frame.png" alt="">
+						</figure>
+						<div class="works-image-inner">
+							<img src="./images/work_2.jpg" alt="">
+						</div>
+						<!-- modal_2 -->
+						<div class="works-zoom">
+							<label for="work_2" class="work-check-label">拡大表示</label>
+							<input id="work_2" class="work-check" type="checkbox" value="拡大表示">
+							<div class="modal">
+								<div class="container">
+									<div class="modal-inner">
+										<div class="modal-body">
+											<img src="./images/modal-work2.png" alt="">
+										</div>
+										<div class="modal-close">
+											<label for="work_2"><img class="modal-close-image" src="./images/modal-close.svg" alt=""></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- 説明② -->
+					</div>
+					<div class="works-text-wrap">
+						<h3 class="works-title">南大泉テラスハウス</h3>
+						<p class="works-summary">東京都の保谷駅近くにあるアパート「南大泉テラスハウス」のHPです。Wordpressを利用し、デザインや制作からSEO対策まで行いました。</p>
+						<div class="works-tag">
+							<a href="https://hide-apartment.com/" target="_blank">Webサイト</a>
+						</div>
+					</div>
+				</div>
+				<div class="works-inner third">
+					<div class="works-image-wrap">
+						<figure class="works-image-frame">
+							<img src="./images/pc-frame.png" alt="">
+						</figure>
+						<div class="works-image-inner">
+							<img src="./images/work_3.jpg" alt="">
+						</div>
+						<!-- nodal_3 -->
+						<div class="works-zoom">
+							<label for="work_3" class="work-check-label">拡大表示</label>
+							<input id="work_3" class="work-check" type="checkbox" value="拡大表示">
+							<div class="modal">
+								<div class="container">
+									<div class="modal-inner">
+										<div class="modal-body">
+											<img src="./images/modal-work3.png" alt="">
+										</div>
+										<div class="modal-close">
+											<label for="work_3"><img class="modal-close-image" src="./images/modal-close.svg" alt=""></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 説明③ -->
+					<div class="works-text-wrap">
+						<h3 class="works-title">コーポレートサイト</h3>
+						<p class="works-summary">Sample Web株式会社<br>都内某所にあるweb関連企業のコーポレートサイトとして制作しました。白を基調として誠実さが出るように作成しています。</p>
+						<div class="works-tag">
+							<a href="https://saya4017.github.io/Demo-Corporate/" target="_blank">LP・ランディングページ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- contact -->
+	<section class="contact-area" id="contact">
+		<div class="container">
+			<h2 class="section-title">
+				<span class="en">Contact</span>
+				<span class="ja">お問い合わせ</span>
+			</h2>
+			<form action="#" method="post" class="contact-form">
+				<div class="form-group">
+					<label class="form-label">
+						<div class="form-label-text">お名前</div>
+						<input type="text" name="contact_name" placeholder="お名前を入力してください">
+					</label>
+				</div>
+				<div class="form-group">
+					<label class="form-label">
+						<div class="form-label-text">メールアドレス</div>
+						<input type="email" name="contact_email" placeholder="メールアドレスを入力してください">
+					</label>
+				</div>
+				<div class="form-group">
+					<label class="form-label">
+						<div class="form-label-text">お問い合わせカテゴリー</div>
+						<select name="contact_category">
+							<option disabled selected>選択してください</option>
+							<option value="0">サイトについて</option>
+							<option value="1">お仕事依頼について</option>
+							<option value="3">その他</option>
+						</select>
+					</label>
+				</div>
+				<div class="form-group">
+					<label class="form-label">
+						<div class="form-label-text">お問い合わせ内容</div>
+						<textarea name="contact_content"></textarea>
+					</label>
+				</div>
+				<div class="form-submit-wrap">
+					<button type="submit" class="btn-submit" action="#">送信</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer class="footer"><small>&copy;2023 My Portfolio produced by SAORI TSUTSUMI.</small></footer>
+</body>
+</html>

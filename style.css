@@ -1,0 +1,1096 @@
+/* 共通スタイル */
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Yu Gothic Medium", ”YuGothic”, "游ゴシック Medium", "游ゴシック体", "メイリオ",sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #009BFC;
+  text-decoration: none;
+}
+
+.container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title .en {
+  color: #ED338F;
+  font-size: 24px;
+  font-family: "Arial",sans-serif;
+  font-style: italic;
+  display: block;
+}
+
+.section-title .ja {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* header */
+.header {
+  color: #fff;
+  /*background-color: black*/
+  padding-top: 10px;
+  height: 100vh;
+  position:relative;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+}
+.gnav {
+  display: flex;
+}
+
+.gnav-item {
+  border-right: 2px #D0D0D0 solid;
+}
+
+.gnav-item:last-child{
+  border-right: none;
+}
+
+.gnav-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 30px;
+}
+
+.gnav-link:hover {
+  text-decoration: underline;
+}
+
+.site-title {
+  font-size: 70px;
+  font-family: "Arial Black",sans-serif;
+  position:absolute;
+  bottom: 120px;
+}
+
+.mainvisual-video-wrap {
+  width: 100%;
+  height: 100vh;
+  position:absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+
+.mainvisual-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* わたしについて */
+.about-area {
+  padding: 60px 0;
+}
+
+.about-area .section-title {
+  text-align: left;
+}
+
+.about-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items:  flex-start;
+}
+
+.about-text-wrap {
+  width: 520px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.about-image-wrap {
+  width: 500px;
+  position: relative;
+  margin-top:-120px;
+
+}
+
+.about-image {
+  box-shadow: 3px 3px 15px #999;
+}
+
+.about-image-info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-name {
+  color: #fff;
+  background-color: #003978;
+  font-size: 30px;
+  font-weight: bold;
+  padding:20px 60px 15px 30px;
+}
+
+.synonym {
+  font-size: 18px;
+  display: block;
+}
+
+.about-sns-list {
+  display: flex;
+}
+
+.about-sns-item {
+  width: 45px;
+  margin: 0 10px;
+}
+
+.about-sns-item:hover {
+  opacity: 0.8;
+}
+
+/* 保有スキル */
+.skills-area {
+  background-color: #EDF5FD;
+  padding: 80px 0;
+}
+
+.skill-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  margin-bottom: 30px;
+  width: 510px;
+}
+
+.skill-item::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.skill-detail {
+  width: 340px;
+  position: relative;
+  float: left;
+}
+
+.skill-name {
+  font-size: 20px;
+  font-family: "Arial",sans-serif;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.skill-meter {
+  height: 12px;
+  width: 100%;
+  display: block;
+}
+
+.skill-mastery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1;
+}
+
+.skill-mastery-number {
+  color: #ED338F;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.skill-image {
+  width: 140px;
+  float: right;
+}
+
+/* 制作実績 */
+.works-area {
+  padding: 80px 0;
+}
+
+.works-wrap {
+  margin-top: 50px;
+}
+
+.works-inner {
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-inner .second .works-image-wrap {
+  order: 2;
+}
+
+.work-inner .second .works-text-wrap {
+  order: 1;
+}
+
+.works-image-wrap {
+  width: 700px;
+  position: relative;
+}
+
+.works-image-inner {
+  width: 545px;
+  height: 340px;
+  position: absolute;
+  top: 30px;
+  left: 78px;
+  overflow: scroll;
+}
+
+.works-text-wrap {
+  width: 340px;
+}
+
+.works-title {
+  color: #fff;
+  font-size: 22px;
+  background-color: #003978;
+  padding: 8px 10px;
+  margin: 0 0 30px 0;
+  display: inline-block;
+}
+
+.works-summary {
+  font-size: 18px;
+  margin: 0 0 30px;
+}
+
+.works-tag {
+  color: #ED338F;
+  border: 1px solid #ED338F ;
+  padding: 3px 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* お問い合わせ */
+.comtact-area {
+  background-image: url("./images/bg-contact.jpg");
+  padding: 80px 0;
+}
+
+.contact-area .section-title .ja {
+  color: white;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 60px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+.form-label-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.form-label input,
+.form-label select,
+.form-label textarea {
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #DEDEDE ;
+  padding:15px;
+}
+
+.form-label select {
+  background-image: url("./images/bg-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-label textarea {
+  height: 250px;
+}
+
+.form-submit-wrap {
+  text-align: center;
+}
+
+.btn-submit {
+  color: #fff;
+  background-color: #ED338F;
+  font-size: 18px;
+  font-weight: bold;
+  width: 140px;
+  border: none;
+  padding:10px 0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px #CCC;
+}
+
+.btn-submit:hover {
+  background-color: #ED64A8;
+}
+
+/* footer */
+.footer {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 15px 0;
+  margin: 40px;
+}
+/*
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "YuGothic", "游ゴシック Medium", "游ゴシック体", "メイリオ", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+a {
+  color: #009BFC;
+  text-decoration: none;
+}
+.container {
+  width: 1060px;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+}
+
+.section-title .en {
+  color: #ED338F;
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  display: block;
+}
+
+.section-title .ja {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* header */
+.header {
+  color: #FFF;
+  /* background-color: #000; */
+  padding-top: 10px;
+  height: 100vh;
+  position: relative;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+.gnav {
+  display: flex;
+}
+
+.gnav-item {
+  border-right: 2px solid #D0D0D0;
+}
+
+.gnav-item:last-child {
+  border-right: 0;
+}
+
+.gnav-link {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 30px;
+}
+
+.gnav-link:hover {
+  text-decoration: underline;
+}
+
+.site-title {
+  font-size: 70px;
+  font-family: "Arial Black", sans-serif;
+  position: absolute;
+  bottom: 100px;
+}
+
+.mainvisual-video-wrap {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.mainvisual-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* わたしについて */
+.about-area {
+  padding: 60px 0;
+}
+
+.about-area .section-title {
+  text-align: left;
+}
+
+.about-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-text-wrap {
+  width: 520px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.about-image-wrap {
+  width: 500px;
+  position: relative;
+  margin-top: -160px;
+}
+
+.about-image {
+  box-shadow: 3px 3px 15px #999;
+}
+
+.about-image-info {
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-name {
+  color: #FFF;
+  background-color: #003978;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 60px 15px 30px;
+  clip-path: polygon(0 0, 85% 0%, 100% 100%, 0 100%);
+  background: linear-gradient(to right, #de4feb 0%, #86ffd9 100%);
+}
+
+.synonym {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.about-sns-list {
+  display: flex;
+}
+
+.about-sns-item {
+  width: 45px;
+  margin: 0 10px;
+  transition: 0.8s all;
+}
+
+.about-sns-item:hover {
+  opacity: 0.8;
+  transform: rotate(360deg);
+}
+
+/* skill */
+.skills-area {
+  background-color: #EDF5FD;
+  padding: 80px 0;
+}
+
+.skill-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  margin-bottom: 30px;
+  width: 510px;
+}
+
+.skill-item:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.skill-detail {
+  width: 340px;
+  position: relative;
+  float: left;
+}
+
+.skill-name {
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.skill-meter {
+  height: 12px;
+  width: 100%;
+  display: block;
+}
+
+.skill-meter::-webkit-meter-inner-element {
+  display: block;
+}
+
+.skill-meter::-webkit-meter-bar {
+  border: none;
+  background-color: white;
+}
+
+.skill-meter::-webkit-meter-optimum-value {
+  background-color: #009BFC;
+  border-radius: 10px;
+}
+
+.skill-mastery {
+  position: absolute;
+  top:0;
+  right:0;
+  line-height: 1;
+}
+
+.skill-mastery-number {
+  color: #ED338F;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.skill-image {
+  width: 140px;
+  float: right;
+}
+
+/* 制作実績 */
+.works-area {
+  padding: 80px 0;
+}
+
+.works-wrap {
+  margin-top: 50px;
+}
+
+.works-inner {
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-inner.second .works-image-wrap {
+  order: 2;
+}
+
+.works-inner.second .works-text-wrap {
+  order: 1;
+}
+
+.works-image-wrap {
+  width: 700px;
+  position: relative;
+}
+
+.works-image-inner {
+  width: 545px;
+  height: 340px;
+  position: absolute;
+  top: 30px;
+  left: 78px;
+  overflow: hidden;
+}
+
+.works-text-wrap {
+  width: 340px;
+}
+
+.works-title {
+  color: #FFF;
+  font-size: 22px;
+  background-color: #003978;
+  padding: 8px 10px;
+  margin: 0 0 30px;
+  display: inline-block;
+}
+
+.works-summary {
+  font-size: 18px;
+  margin: 0 0 30px;
+}
+
+.work-tag a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.works-tag {
+  color: #009BFC;
+  border: 1px solid #009BFC;
+  padding: 3px 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.works-zoom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.work-check-label {
+  color: #009BFC;
+  background-image: url("./images/icon-expansion.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 18px;
+  vertical-align: middle;
+  padding: 5px 0 5px 25px;
+}
+
+.work-check-label:hover {
+  text-decoration: underline;
+}
+
+.work-check {
+  display: none;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /*display: none;*/
+  opacity: 0%;
+  transition: opacity 0.5s, transform 0s 0.5s;
+  transform: scale(0);
+}
+
+.modal-inner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.modal-body {
+  width: 100%;
+  height: 90%;
+  overflow: scroll;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5%;
+  right: -50px;
+}
+
+.work-check:checked + .modal {
+  /*display: block;*/
+  opacity: 100%;
+  transform: scale(1);
+  transition: opacity 0.5s;
+}
+
+.work-check:checked + .modal .modal-inner {
+  transform: scale(1);
+}
+
+/* contact */
+.contact-area {
+  background-image: url("./images/contact-form.png");
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-area .section-title .ja {
+  color: black;
+}
+
+.contact-form {
+  background-color: #FFF;
+  padding: 60px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #9f9e9e;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+.form-label-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.form-label input,
+.form-label select,
+.form-label textarea {
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #DEDEDE;
+  padding: 15px;
+}
+
+.form-label select {
+  background-image: url("./images/bg-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-label textarea {
+  height: 250px;
+}
+
+.form-submit-wrap {
+  text-align: center;
+}
+
+.btn-submit {
+  color: #FFF;
+  background-color: #ED338F;
+  font-size: 18px;
+  font-weight: bold;
+  width: 140px;
+  border: none;
+  padding: 10px 0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px #CCC;
+}
+
+.btn-submit:hover {
+  background-color: #ED64A8;
+}
+
+/* footer */
+.footer {
+  color: #FFF;
+  background-color: black;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0%;
+}
+
+/* レスポンシブ */
+  /* 1199px〜1080pxで表示が崩れるスタイルを調整 */
+@media screen and (max-width: 1199px) {
+  .modal-close {
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    right: 0;
+}
+}
+
+ /* 1079px〜992pxで表示が崩れるスタイルを調整 */
+@media screen and (max-width: 1079px) {
+ 
+.container {
+  width: 960px;
+}
+.skill-item {
+  width: 465px;
+}
+.skill-detail {
+  width: 320px;
+}
+.skill-image {
+  width: 120px;
+}
+.works-image-wrap {
+  width: 600px;
+}
+.works-image-inner {
+  width: 465px;
+  height: 290px;
+  top: 25px;
+  left: 67px;
+}
+}
+
+ /* 991px〜768pxで表示が崩れるスタイルを調整 */
+@media screen and (max-width: 991px) {
+  .container {
+    width: 750px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.gnav-link {
+    padding: 0 15px;
+}
+
+.site-title {
+    text-align: center;
+    transform: translateY(50%);
+    bottom: 50%;
+    left: 0;
+    right: 0;
+}
+
+.about-wrap {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-text-wrap {
+    order: 2;
+}
+
+.about-image-wrap {
+    margin-top: -300px;
+    margin-bottom: 60px;
+}
+
+.about-text-wrap {
+    width: 600px;
+}
+
+.skill-item {
+    width: 48%;
+    position: relative;
+}
+
+.skill-detail {
+    width: 100%;
+    float: none;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-image {
+    width: 100px;
+    opacity: 0.2;
+    float: none;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 0;
+}
+
+.works-inner {
+    display: block;
+}
+
+.works-image-wrap {
+    margin: auto;
+}
+
+.works-text-wrap {
+    width: 100%;
+    margin-top:30px;
+    text-align: center;
+}
+}
+
+/* 767px〜（375px）で表示が崩れるスタイルを調整 */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.section-title .ja {
+    font-size: 24px;  
+}
+
+.gnav-item {
+    display: none;
+}
+
+.site-title {
+    font-size: 10vw;
+}
+
+.about-area {
+    padding: 30px 0;
+}
+
+.about-image-wrap {
+    width: 90%;
+    max-width: 500px;
+}
+
+.about-image-info {
+    align-items: flex-end;
+}
+
+.about-name {
+    font-size: 24px;
+    padding: 15px 50px 10px 20px;
+}
+
+.synonym {
+    font-size: 16px;
+}
+
+.about-sns-list {
+    display: block;
+}
+
+.about-sns-item {
+    margin: 10px;
+}
+
+.skills-area {
+    padding: 30px 0;
+}
+
+.skill-item {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.works-area {
+    padding: 30px 0;
+}
+
+.works-inner {
+    margin-bottom: 60px;
+}
+
+.works-image-wrap {
+    width:100%;
+}
+
+.works-image-frame {
+    display: none;
+}
+
+.works-image-inner {
+    width: 100%;
+    height: 100%;
+    padding-top: 62%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.works-image-inner img {
+    position: absolute;
+    top: 0;
+}
+
+.works-title {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.contact-area {
+    padding: 30px 0;
+}
+
+.contact-form {
+    padding: 20px;
+}
+}
